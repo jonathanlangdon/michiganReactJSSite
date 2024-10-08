@@ -1,14 +1,12 @@
-image: ruby:3.2
+image: node:latest
 
 pages:
-  script: |
-    if test -f "index.html"; then
-      gem install jekyll
-      jekyll build -d public
-    else
-      echo "No index.html file found, this file is required."
-      exit
-    fi
+  script:
+    - npm install  # Install dependencies
+    - npm run build  # Build the project
+    - mv build public  # Move the build directory to public
   artifacts:
     paths:
-      - public
+      - public  # Specify the directory to publish
+  only:
+    - working  # Run this job only for the 'working' branch
