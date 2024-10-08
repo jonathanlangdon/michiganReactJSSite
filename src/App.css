@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+p {
+  color: #333;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#main-title {
+  font-size: 2em;
+}
