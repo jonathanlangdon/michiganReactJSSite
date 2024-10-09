@@ -10,18 +10,20 @@ function CityPage({ city }) {
         className="w-100 mb-4 custom-height"
       />
 
-      <h1>{city.name}</h1>
+      <div className="absolute-box">
+        <h1>{city.name}</h1>
+      </div>
 
-      <ul>
-        <li>Population: {city.population}</li>
-        <li>Year Incorporated: {city.incorporationYear}</li>
-        <li>Region: {city.region}</li>
-        <li>Classification: {city.classification}</li>
-        <li>Average Income Level: {city.incomeLevel}</li>
-      </ul>
-      <footer>
-        <p>Information as of 2024</p>
-      </footer>
+      <div className="relative-box">
+        <ul>
+          <li>Population: {city.population}</li>
+          <li>Year Incorporated: {city.incorporationYear}</li>
+          <li>Region: {city.region}</li>
+          <li>Classification: {city.classification}</li>
+          <li>Average Income Level: {city.incomeLevel}</li>
+        </ul>
+        <footer></footer>
+      </div>
     </div>
   );
 }
