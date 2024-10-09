@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/michiganReactJSSite/static/css/main.df13c0e5.css",
-    "main.js": "/michiganReactJSSite/static/js/main.894c06f4.js",
+    "main.js": "/michiganReactJSSite/static/js/main.e6d1217b.js",
     "index.html": "/michiganReactJSSite/index.html",
     "main.df13c0e5.css.map": "/michiganReactJSSite/static/css/main.df13c0e5.css.map",
-    "main.894c06f4.js.map": "/michiganReactJSSite/static/js/main.894c06f4.js.map"
+    "main.e6d1217b.js.map": "/michiganReactJSSite/static/js/main.e6d1217b.js.map"
   },
   "entrypoints": [
     "static/css/main.df13c0e5.css",
-    "static/js/main.894c06f4.js"
+    "static/js/main.e6d1217b.js"
   ]
 }
