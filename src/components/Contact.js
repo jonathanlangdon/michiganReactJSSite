@@ -9,8 +9,8 @@ function Contact() {
     confirmEmail: '',
     question: ''
   });
-  const [showModal, setShowModal] = useState(false);
-  const [emailMatchError, setEmailMatchError] = useState('');
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [showErrorModal, setShowErrorModal] = useState(false);
 
   const handleChange = e => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -20,10 +20,9 @@ function Contact() {
     e.preventDefault();
 
     if (formData.email !== formData.confirmEmail) {
-      setEmailMatchError('Email addresses do not match.');
+      setShowErrorModal(true);
     } else {
-      setEmailMatchError('');
-      setShowModal(true);
+      setShowSuccessModal(true);
       setFormData({
         firstName: '',
         lastName: '',
@@ -81,9 +80,6 @@ function Contact() {
               onChange={handleChange}
               required
             />
-            {emailMatchError && (
-              <Form.Text className="text-danger">{emailMatchError}</Form.Text>
-            )}
           </Form.Group>
 
           <Form.Group controlId="question" className="m-3">
@@ -115,13 +111,25 @@ function Contact() {
         />
       </div>
 
-      <Modal show={showModal} onHide={() => setShowModal(false)}>
+      <Modal show={showSuccessModal} onHide={() => setShowSuccessModal(false)}>
         <Modal.Header closeButton>
           <Modal.Title>Submission Successful</Modal.Title>
         </Modal.Header>
         <Modal.Body>Your question has been submitted!</Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={() => setShowModal(false)}>
+          <Button variant="primary" onClick={() => setShowSuccessModal(false)}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+      <Modal show={showErrorModal} onHide={() => setShowErrorModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Email Error</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Email Address does not match.</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowErrorModal(false)}>
             Close
           </Button>
         </Modal.Footer>
