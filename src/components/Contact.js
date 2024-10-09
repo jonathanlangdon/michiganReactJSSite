@@ -102,6 +102,17 @@ function Contact() {
         </Button>
       </Form>
 
+      <img
+        src="/images/michigan-small.jpg"
+        srcSet="
+            /images/michigan-small.jpg 1x,
+            /images/michigan-medium.jpg 2x,
+            /images/michigan-large.jpg 3x
+          "
+        alt="Michigan Landscape"
+        className="img-fluid mx-auto d-block mt-3"
+      />
+
       <Modal show={showModal} onHide={() => setShowModal(false)}>
         <Modal.Header closeButton>
           <Modal.Title>Submission Successful</Modal.Title>
