@@ -5,11 +5,18 @@ function CityPage({ city }) {
 
   const formattedCitation = `${citation.author}. (${citation.year}). ${citation.title}. ${citation.websiteName}. Retrieved from ${citation.url}`;
 
+  const processSrcSet = srcSet => {
+    return srcSet
+      .split(',')
+      .map(src => `${process.env.PUBLIC_URL}/${src.trim()}`)
+      .join(', ');
+  };
+
   return (
     <div className="container-fluid position-relative">
       <img
-        src={city.imageUrl}
-        srcSet={city.imageSrcSet}
+        src={`${process.env.PUBLIC_URL}/${city.imageUrl}`}
+        srcSet={processSrcSet(city.imageSrcSet)}
         alt={city.name}
         className="w-100 mb-4 custom-height"
       />

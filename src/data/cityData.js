@@ -6,11 +6,11 @@ const cityData = [
     region: 'Southeast Michigan',
     classification: 'Urban',
     incomeLevel: 'Below State Average',
-    imageUrl: '/images/detroit-small.jpg',
+    imageUrl: 'images/detroit-small.jpg',
     imageSrcSet: `
-      /images/detroit-small.jpg 1x,
-      /images/detroit-medium.jpg 2x,
-      /images/detroit-large.jpg 3x
+      images/detroit-small.jpg 1x,
+      images/detroit-medium.jpg 2x,
+      images/detroit-large.jpg 3x
     `,
     citation: {
       author: 'Wikipedia',
@@ -27,11 +27,11 @@ const cityData = [
     region: 'Western Michigan',
     classification: 'Urban',
     incomeLevel: 'Above State Average',
-    imageUrl: '/images/grandrapids-small.jpg',
+    imageUrl: 'images/grandrapids-small.jpg',
     imageSrcSet: `
-      /images/grandrapids-small.jpg 1x,
-      /images/grandrapids-medium.jpg 2x,
-      /images/grandrapids-large.jpg 3x
+      images/grandrapids-small.jpg 1x,
+      images/grandrapids-medium.jpg 2x,
+      images/grandrapids-large.jpg 3x
     `,
     citation: {
       author: 'Wikipedia',
@@ -48,11 +48,11 @@ const cityData = [
     region: 'Central Michigan',
     classification: 'Urban',
     incomeLevel: 'At State Average',
-    imageUrl: '/images/lansing-small.jpg',
+    imageUrl: 'images/lansing-small.jpg',
     imageSrcSet: `
-      /images/lansing-small.jpg 1x,
-      /images/lansing-medium.jpg 2x,
-      /images/lansing-large.jpg 3x
+      images/lansing-small.jpg 1x,
+      images/lansing-medium.jpg 2x,
+      images/lansing-large.jpg 3x
     `,
     citation: {
       author: 'Wikipedia',

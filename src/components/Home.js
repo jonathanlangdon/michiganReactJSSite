@@ -2,6 +2,13 @@ import React from 'react';
 import cityData from '../data/cityData';
 
 function Home() {
+  const processSrcSet = srcSet => {
+    return srcSet
+      .split(',')
+      .map(src => `${process.env.PUBLIC_URL}/${src.trim()}`)
+      .join(', ');
+  };
+
   return (
     <div className="container mt-4">
       <header className="mb-4">
@@ -9,12 +16,12 @@ function Home() {
           Michigan - The Great Lake State
         </h1>
         <img
-          src="/images/michigan-small.jpg"
-          srcSet="
-            /images/michigan-small.jpg 1x,
-            /images/michigan-medium.jpg 2x,
-            /images/michigan-large.jpg 3x
-          "
+          src={`${process.env.PUBLIC_URL}/images/michigan-small.jpg`}
+          srcSet={processSrcSet(`
+            images/michigan-small.jpg 1x,
+            images/michigan-medium.jpg 2x,
+            images/michigan-large.jpg 3x
+          `)}
           alt="Michigan Landscape"
           className="img-fluid mx-auto d-block mt-3"
         />

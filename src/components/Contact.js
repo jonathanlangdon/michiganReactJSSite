@@ -33,6 +33,13 @@ function Contact() {
     }
   };
 
+  const processSrcSet = srcSet => {
+    return srcSet
+      .split(',')
+      .map(src => `${process.env.PUBLIC_URL}/${src.trim()}`)
+      .join(', ');
+  };
+
   return (
     <Container>
       <h1 className="mt-3">Contact Us</h1>
@@ -100,14 +107,14 @@ function Contact() {
         </Form>
 
         <img
-          src="/images/michigan-small.jpg"
-          srcSet="
-            /images/michigan-small.jpg 1x,
-            /images/michigan-medium.jpg 2x,
-            /images/michigan-large.jpg 3x
-          "
+          src={`${process.env.PUBLIC_URL}/images/michigan-small.jpg`}
+          srcSet={processSrcSet(`
+            images/michigan-small.jpg 1x,
+            images/michigan-medium.jpg 2x,
+            images/michigan-large.jpg 3x
+          `)}
           alt="Michigan Landscape"
-          className="img-float d-block mt-3"
+          className="img-float d-block mt-3 mt-md-0 ms-md-4"
         />
       </div>
 
