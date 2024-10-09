@@ -11,7 +11,7 @@ import NotFound from './components/NotFound';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/michiganReactJSSite">
       <Navbar />
       <main>
         <Routes>
