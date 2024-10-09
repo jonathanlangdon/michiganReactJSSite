@@ -23,11 +23,10 @@ function Home() {
       <div className="row">
         <section className="col-md-8">
           <p>
-            Michigan is a state in the Great Lakes region of the upper
-            Midwestern United States. It is known for its diverse geography,
-            including beautiful lakes, forests, and urban areas. Michigan offers
-            a wide range of attractions and activities for residents and
-            visitors alike.
+            Michigan is a beautiful state known for its many lakes and
+            freshwater beaches. Major cities like Grand Rapids and Detroit have
+            vibrant city lives. Many other attractions are available to
+            residents and visitors.
           </p>
           <p>
             <a
@@ -96,7 +95,7 @@ function Home() {
             </li>
             <li>
               <a
-                href="https://www.traveloka.com/en-mk/blog/things-to-do-in-michigan"
+                href="https://www.traveloka.com/en-en/activities/united-states/region/michigan-4005001836"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -1,6 +1,10 @@
 import React from 'react';
 
 function CityPage({ city }) {
+  const { citation } = city;
+
+  const formattedCitation = `${citation.author}. (${citation.year}). ${citation.title}. ${citation.websiteName}. Retrieved from ${citation.url}`;
+
   return (
     <div className="container-fluid position-relative">
       <img
@@ -22,7 +26,9 @@ function CityPage({ city }) {
           <li>Classification: {city.classification}</li>
           <li>Average Income Level: {city.incomeLevel}</li>
         </ul>
-        <footer></footer>
+        <footer>
+          <p>Source (APA): {formattedCitation}</p>
+        </footer>
       </div>
     </div>
   );

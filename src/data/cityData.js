@@ -11,7 +11,14 @@ const cityData = [
       /images/detroit-small.jpg 1x,
       /images/detroit-medium.jpg 2x,
       /images/detroit-large.jpg 3x
-    `
+    `,
+    citation: {
+      author: 'Wikipedia',
+      year: '2024',
+      title: 'Detroit',
+      websiteName: 'Wikipedia',
+      url: 'https://en.wikipedia.org/wiki/Detroit'
+    }
   },
   {
     name: 'Grand Rapids',
@@ -25,7 +32,14 @@ const cityData = [
       /images/grandrapids-small.jpg 1x,
       /images/grandrapids-medium.jpg 2x,
       /images/grandrapids-large.jpg 3x
-    `
+    `,
+    citation: {
+      author: 'Wikipedia',
+      year: '2024',
+      title: 'Grand Rapids, Michigan',
+      websiteName: 'Wikipedia',
+      url: 'https://en.wikipedia.org/wiki/Grand_Rapids,_Michigan'
+    }
   },
   {
     name: 'Lansing(Capital)',
@@ -39,7 +53,14 @@ const cityData = [
       /images/lansing-small.jpg 1x,
       /images/lansing-medium.jpg 2x,
       /images/lansing-large.jpg 3x
-    `
+    `,
+    citation: {
+      author: 'Wikipedia',
+      year: '2024',
+      title: 'Lansing, Michigan',
+      websiteName: 'Wikipedia',
+      url: 'https://en.wikipedia.org/wiki/Lansing,_Michigan'
+    }
   }
 ];
 
